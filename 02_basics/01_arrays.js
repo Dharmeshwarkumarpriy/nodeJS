@@ -4,19 +4,19 @@ const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "naagraj"]
 
 const myArr2 = new Array(1, 2, 3, 4)
-// console.log(myArr[1]);
+// console.log(myArr[1]); // [1,2,3,4,5] ...
 
-// Array methods
+// Array methods ...
 
-// myArr.push(6)
-// myArr.push(7)
-// myArr.pop()
+// myArr.push(6) // [1,2,3,4,5,6] ...
+// myArr.push(7) // [1,2,3,4,5,6,7] ...
+// myArr.pop() // [1,2,3,4,5,6] ...
 
-// myArr.unshift(9)
-// myArr.shift()
+// myArr.unshift(9) // [9,0,1,2,3,4,5] ...
+// myArr.shift() // 
 
-// console.log(myArr.includes(9));
-// console.log(myArr.indexOf(3));
+// console.log(myArr.includes(9)); // false ...
+// console.log(myArr.indexOf(3)); // -1
 
 // const newArr = myArr.join()
 
