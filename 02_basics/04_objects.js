@@ -50,7 +50,7 @@ const course={
     price:999,
     courseInstructor:"dharmy"
 }
-// course.courseInstructor // access object value..
+course.courseInstructor // access object value..
 const {courseInstructor}=course // object destructuring..
 const {courseInstructor:instructor}=course // object destructuring..
 console.log(courseInstructor); // dharmy // access object value..
