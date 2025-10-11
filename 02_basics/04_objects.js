@@ -57,10 +57,10 @@ console.log(courseInstructor); // dharmy // access object value..
 console.log(instructor); // dharmy // access object value..
 
 // {
-//     "name":"dharmy",
-//     "age":18,
-//     "course":"js in hindi",
-//     "price":999
+//     "name"="dharmy",
+//     "age"=18,
+//     "course"="js in hindi",
+//     "price"=999
 // }
 
 [
