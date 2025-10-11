@@ -55,3 +55,14 @@ const {courseInstructor}=course // object destructuring..
 const {courseInstructor:instructor}=course // object destructuring..
 console.log(courseInstructor); // dharmy // access object value..
 console.log(instructor); // dharmy // access object value..
+
+// {
+//     "name":"dharmy",
+//     "age":18,
+//     "course":"js in hindi",
+//     "price":999
+// }
+
+[
+    {},{},{}
+]
