@@ -2,7 +2,7 @@
 
 // object leterals
 
-const mySym=Symbol('mySym')
+const mySym=Symbol('mySym') // symbol key.. 
 
 const jsUser ={
     name:"dharmy",
@@ -25,7 +25,7 @@ jsUser.email="dhamry@gmail.com" // update object..
 //   Object.freeze(jsUser) // freeze object..
 
 jsUser.email="priy@gmail.com" // not update....
-console.log(jsUser);
+console.log(jsUser); // {name: 'dharmy', full name: 'dharmendra kumar', Symbol(mySym): 'myvalue', age: '18', location: 'india', email: '
 
 jsUser.greetings=function(){
     console.log("hello js user"); // method..
@@ -37,4 +37,4 @@ jsUser.greetingTwo=function(){
 
 console.log(jsUser.greetings()); // hello js user // return undefined..
 
-console.log(jsUser.greetingTwo()); // undefined // return nothing..
+console.log(jsUser.greetingTwo()); // undefined // return nothing.. 
