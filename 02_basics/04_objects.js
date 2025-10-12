@@ -6,7 +6,7 @@ tinderUser.isLoggedIn=false // update value..
 tinderUser.name="dharmy" // delete key value..
 
  console.log(tinderUser); // {age: 18, isLoggedIn: false, id: '12345'}
-
+0
 const regularUser={
     email:"sam@gmail.com",
     fullname:{
