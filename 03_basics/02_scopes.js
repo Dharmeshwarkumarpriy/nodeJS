@@ -10,13 +10,48 @@ if (true){
     console.log("inner", b); // value of b is 60 // block scope..
 }
 
-for(let i=0; i< Array.length; i++){
-    const element=array[i];
-
-}
 
 // console.log("value of a is", a); // value of a is 10 // global scope.. 
 // console.log("value of b is", b); // value of b is 20 // block scope.. 
 
 console.log("value of c is", c); // value of c is 30 // global scope..
 
+
+function one(){
+    const userName="dharmy"
+    let Name="priy"
+
+    function two(){
+        const website="youtube"
+        console.log(userName);
+    }
+   // console.log(website);
+   console.log(Name);
+    two()
+}
+one()
+if (true){
+    const userName="dharmy"
+    if(userName==="dharmy"){
+        const website =" youtube"
+        console.log(userName+website);
+    }
+   // console.log(website);
+}
+//console.log(userName);
+
+
+//+++++++ interesting ++++++
+
+console.log(addone(5));
+function addone(num){
+    return num+1
+}
+
+
+console.log(addTwo(5));
+const addTwo=function(num){
+    return num+2
+}
+
+addTwo(5)
