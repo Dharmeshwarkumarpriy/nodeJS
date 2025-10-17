@@ -1,6 +1,6 @@
 // singaltan ...
 
-// object leterals
+// object literals
 
 const mySym=Symbol('mySym') // symbol key.. 
 
