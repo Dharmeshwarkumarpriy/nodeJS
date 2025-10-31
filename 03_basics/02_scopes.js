@@ -17,9 +17,9 @@ if (true){
 console.log("value of c is", c); // value of c is 30 // global scope..
 
 
-function one(){
-    const userName="dharmy"
-    let Name="priy"
+function one(){ // function scope..
+    const userName="dharmy" // function scope..
+    let Name="priy" // function scope..
 
     function two(){
         const website="youtube"
@@ -30,9 +30,9 @@ function one(){
     two()
 }
 one()
-if (true){
-    const userName="dharmy"
-    if(userName==="dharmy"){
+if (true){ // block scope..
+    const userName="dharmy" // block scope.. /
+    if(userName==="dharmy"){ // block scope..
         const website =" youtube"
         console.log(userName+website);
     }
@@ -43,15 +43,17 @@ if (true){
 
 //+++++++ interesting ++++++
 
-console.log(addone(5));
-function addone(num){
-    return num+1
+console.log(addone(5)); // can access before initialization ... 
+function addone(num){// function declaration
+    return num+1 // function scope..
 }
 
 // can not access before initialization ...
 // console.log(addTwo(5));
-const addTwo=function(num){
-    return num+2
+const addTwo=function(num){ // function expression 
+    return num+2 // function scope..
 }
 
-addTwo(5)
+addTwo(5) // can access after initialization ...
+
+// console.log(addThree(5)); // can not access before initialization ...
