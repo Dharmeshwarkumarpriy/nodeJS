@@ -7,42 +7,42 @@ const coding =["js","python","c++","java","ruby"] // array of strings..
 
 // })
 
-console.log("val...");
-coding.forEach(function (val){
-    console.log(val);
+console.log("val..."); // val... // js // python // c++ // java // ruby //
+coding.forEach(function (val){ // anonymous function.. 
+    console.log(val); // js // python // c++ // java // ruby //
 })
 
-console.log("item...");
-coding.forEach( (item) => {
-    console.log(item);
+console.log("item..."); // item...
+coding.forEach( (item) => { // arrow function.. /
+    console.log(item); // js // python // c++ // java // ruby //
 })
 
-console.log("printMe item...");
-function printMe(item){
-    console.log(item);
+console.log("printMe item..."); // printMe item...
+function printMe(item){ // normal function..
+    console.log(item); // js // python // c++ // java // ruby //
 }
-coding.forEach(printMe)
+coding.forEach(printMe) // calling function..
 
-console.log("item index array...");
-coding.forEach((item, index, arr)=>{
-    console.log(item, index, arr);
+console.log("item index array..."); // item index array...
+coding.forEach((item, index, arr)=>{ // arrow function with 3 parameters..
+    console.log(item, index, arr); // js 0 [...] // python 1 [...] // c++ 2 [...] // java 3 [...] // ruby 4 [...]
 })
 
-console.log('"object..."');
-const myCoding=[
+console.log('"object..."'); // "object..."
+const myCoding=[ // array of objects..
     {
-        languageName: "javaScript",
-        languageFileName: "js"
+        languageName: "javaScript", // object 1..
+        languageFileName: "js" // object 1..
     },
     {
         languageName: "java",
-        languageFileName: "java"
+        languageFileName: "java"// object 2..
     },
     {
-        languageName: "python",
+        languageName: "python", // object 3..
         languageFileName: "py"
     }
-]
-myCoding.forEach((item)=>{
-    console.log(item.languageName);
-})
+] // end of array of objects..
+myCoding.forEach((item)=>{ // iterating array of objects..
+    console.log(item.languageName); // javaScript // java // python //
+}) // end of forEach..
