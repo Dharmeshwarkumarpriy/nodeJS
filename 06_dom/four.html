@@ -11,37 +11,37 @@
     </ul>
 </body>
 <script>
-    function addLanguage(langName){
-        const li=document.createElement('li');
-        li.innerHTML=`${langName}`
+    function addLanguage(langName){ // simple way
+        const li=document.createElement('li'); // create li element
+        li.innerHTML=`${langName}` // add text to li
         document.querySelector('.language').
         appendChild(li)
-    }
-    addLanguage('python')
-    addLanguage('javascript')
+    }// add li to ul
+    addLanguage('python') // call function
+    addLanguage('javascript') // call function
 
-    function addOptiLanguage(langName){
-        const li=document.createElement('li')
-        li.appendChild(document.createTextNode(langName))
-        document.querySelector('.language').appendChild(li)
+    function addOptiLanguage(langName){ // optimized way
+        const li=document.createElement('li') // create li element
+        li.appendChild(document.createTextNode(langName)) // add text node to li
+        document.querySelector('.language').appendChild(li) // add li to ul
     }
-    addOptiLanguage('golang')
+    addOptiLanguage('golang') // call function
 
     // Edit...
-    const secondLang=document.querySelector("li:nth-child(2)")
-    console.log(secondLang);
-    document.querySelector("li:nth-child(3)").textContent="Ruby"
+    const secondLang=document.querySelector("li:nth-child(2)") // select second li
+    console.log(secondLang); // log it
+    document.querySelector("li:nth-child(3)").textContent="Ruby" // change text of third li
     const newli=document.createElement('li')
-    newli.textContent='mojo'
-    secondLang.replaceWith(newli)
+    newli.textContent='mojo' // create new li with text mojo
+    secondLang.replaceWith(newli)   // replace second li with new li
 
     // edit...
-    const firstLang=document.querySelector('li:first-child')
-    firstLang.outerHTML='<li>TypeScript</li>'
+    const firstLang=document.querySelector('li:first-child') // select first li
+    firstLang.outerHTML='<li>TypeScript</li>' // change entire li element
 
     // remove...
-    const lastLang=document.querySelector('li:last-child')
-    lastLang.remove()
+    const lastLang=document.querySelector('li:last-child') // select last li
+    lastLang.remove() // remove last li
 
     // for more use telnet id tool...
 </script>
