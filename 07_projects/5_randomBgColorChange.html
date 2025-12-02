@@ -12,33 +12,33 @@
 </body>
 <script>
     // generate a random color...
-    const randomColor = function(){
+    const randomColor = function(){ // #FF5733
         const hex="023456789ABCDEF"
-        let color="#"
-        for(let i=0; i<6; i++){
-            color += hex[Math.floor(Math.random()*16)]
+        let color="#" // #RRGGBB
+        for(let i=0; i<6; i++){ // 6 times
+            color += hex[Math.floor(Math.random()*16)] // get random index from 0 to 15
         }
-        return color
+        return color // #RRGGBB
     };
-    console.log(randomColor());
+    console.log(randomColor()); // #FF5733
     
-    let intervlId
-    const startChangingColor=function(){
-       if(!intervlId){
-         intervlId= setInterval(changBgColor,1000);
+    let intervlId // undefined
+    const startChangingColor=function(){ // start the interval
+       if(!intervlId){ // if intervlId is null or undefined
+         intervlId= setInterval(changBgColor,1000); // store the interval id
        }
 
-        function changBgColor(){
-            document.body.style.backgroundColor=randomColor();
+        function changBgColor(){ // change the bg color
+            document.body.style.backgroundColor=randomColor(); // set random color
         }
     };
-    const stopChangingColor=function(){
-        clearInterval(intervlId);
-        intervlId=null;
+    const stopChangingColor=function(){ // stop the interval
+        clearInterval(intervlId); // clear the interval
+        intervlId=null; // reset the interval id
     };
 
-    document.querySelector("#start").addEventListener('click',startChangingColor);
+    document.querySelector("#start").addEventListener('click',startChangingColor); // start on click
 
-    document.querySelector("#stop").addEventListener('click',stopChangingColor);
+    document.querySelector("#stop").addEventListener('click',stopChangingColor); // stop on click
 </script>
 </html>
