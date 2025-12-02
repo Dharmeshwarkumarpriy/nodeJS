@@ -10,22 +10,22 @@
     <button id="stop">stop</button>
 </body>
 <script>
-    setTimeout(function () {
-       console.log("dharma");
-    }, 5000);
+    setTimeout(function () { // anonymous function
+       console.log("dharma"); // will run after 5 seconds
+    }, 5000); // 5 seconds
 
-    const sayDharma=function(){
+    const sayDharma=function(){ // named function
         console.log("priy");
     }
     setTimeout(sayDharma,2000)
 
-    const changeText=function(){
-        document.querySelector('h1').innerHTML="best js series"
-    }
+    const changeText=function(){ // named function
+        document.querySelector('h1').innerHTML="best js series" // change h1 text
+    } // named function
     const changeMe=setTimeout(changeText,2000)
-    document.querySelector("#stop").addEventListener('click',function(){
-        clearTimeout(changeMe)
-        console.log('stopped')
-    })
+    document.querySelector("#stop").addEventListener('click',function(){ // anonymous function
+        clearTimeout(changeMe)// stop the timeout
+        console.log('stopped') // will run when button is clicked
+    }) // stop button event listener
 </script>
 </html>
