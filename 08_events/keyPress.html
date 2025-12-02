@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>press key and match </title>
+</head>
+<body>
+    
+    
+</body>
+<script>
+        const insert=document.getElementById('insert');
+
+        window.addEventListener('keydown',function(event){
+            insert.innerHTML=`
+            <div class="color">
+                <table>
+                    <tr>
+                        <th>key</th>
+                        <th>keyCode</th>
+                        <th>code</th>
+                    </tr>
+                    <tr>
+                        <td>${event.key === " " ? "space":event.key}</td>
+                        <td>${event.keyCode}</td>
+                        <td>${event.code}</td>
+                    </tr>
+                </table>
+            </div>
+            `;
+        });
+    </script>
+</html>
