@@ -11,12 +11,12 @@
     <button id="stop">stop</button>
 </body>
 <script>
-    const sayDate = function(str){
-        console.log(str, Date.now());
+    const sayDate = function(str){ // function to be called
+        console.log(str, Date.now()); // log the date with the string
     }
 
-    const intervalId = setInterval(sayDate, 1000, "hi")
+    const intervalId = setInterval(sayDate, 1000, "hi") // call sayDate every second with "hi"
 
-    clearInterval(intervalId)
+    clearInterval(intervalId) // stop the interval
 </script>
 </html>
