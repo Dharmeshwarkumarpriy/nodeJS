@@ -14,9 +14,10 @@
     
 </body>
 <script>
-        const insert=document.getElementById('insert');
+        const insert=document.getElementById('insert'); // get the insert div
 
-        window.addEventListener('keydown',function(event){
+        window.addEventListener('keydown',function(event){ // listen for keydown event
+            console.log(event); // log the event object
             insert.innerHTML=`
             <div class="color">
                 <table>
@@ -27,12 +28,14 @@
                     </tr>
                     <tr>
                         <td>${event.key === " " ? "space":event.key}</td>
+                        // check for space key
+                        
                         <td>${event.keyCode}</td>
                         <td>${event.code}</td>
                     </tr>
                 </table>
             </div>
             `;
-        });
+        }); // keydown event listener
     </script>
 </html>

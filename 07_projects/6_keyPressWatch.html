@@ -7,16 +7,16 @@
 </head>
 <body>
     <div class="project">
-        <div id="insert">
+        <div id="insert"> // initial content
             <div class="key">press the key and watch</div>
         </div>
     </div>
     
 </body>
 <script>
-        const insert=document.getElementById('insert');
+        const insert=document.getElementById('insert'); // get the insert div
 
-        window.addEventListener('keydown',function(event){
+        window.addEventListener('keydown',function(event){ // listen for keydown event
             insert.innerHTML=`
             <div class="color">
                 <table>
@@ -32,7 +32,7 @@
                     </tr>
                 </table>
             </div>
-            `;
-        });
+            `; // insert the key info
+        }); // end of keydown event listener
     </script>
 </html>

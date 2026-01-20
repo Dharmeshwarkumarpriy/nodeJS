@@ -47,12 +47,12 @@
     // }, false)
    
     
-    document.querySelector('#images').addEventListener('click', function(e){
-        console.log(e.target.tagName);
+    document.querySelector('#images').addEventListener('click', function(e){ // event delegation
+        console.log(e.target.tagName); // get the clicked element tag name
         if (e.target.tagName === 'IMG') {
-            console.log(e.target.id);
-            let removeIt = e.target.parentNode
-            removeIt.remove()
+            console.log(e.target.id); // get the clicked image id
+            let removeIt = e.target.parentNode // get the li element
+            removeIt.remove() // remove the li element
         }
     
         

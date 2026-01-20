@@ -11,19 +11,19 @@
 </body>
 <script>
     const requestUrl='https://api.github.com/users/hiteshchoudhary'
-    const xhr = new XMLHttpRequest()
-    xhr.open('GET', requestUrl)
-    xhr.onreadystatechange = function(){
-        console.log(xhr.readyState);
+    const xhr = new XMLHttpRequest() // creating a new XMLHttpRequest object
+    xhr.open('GET', requestUrl) // configuring it: GET-request for the URL
+    xhr.onreadystatechange = function(){ // call a function when the state changes.
+        console.log(xhr.readyState); // log the current state
         if(xhr.readyState === 4){
-            const data = JSON.parse(this.responseText)
+            const data = JSON.parse(this.responseText) // parsing JSON response into a JavaScript object
             console.log(typeof data);            
             console.log(data.followers);            
         }        
     }    
     console.log("here");
-    console.log(xhr.readyState);    
-    xhr.send();
+    console.log(xhr.readyState); // initial state is 0    
+    xhr.send();// sending the request
     
 </script>
 </html>
